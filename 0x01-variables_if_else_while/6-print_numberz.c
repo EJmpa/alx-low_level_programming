@@ -11,12 +11,15 @@ int main(void)
 {
 	int i;
 
-	i = '0';
+	i = 0;
 
-	for (; i <= '10'; i++)
-		putchar(i);
+	for (; i < 10; i++)
+	{
+		putchar((i / 10) + '0');
+		putchar((i % 10) + '0');
+	}
 
-	putchar("\n");
+	printf("\n");
 
 	return (0);
 }
