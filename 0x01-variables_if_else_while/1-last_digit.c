@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * Prints out the last digit of an integer
+ * main - prints out the last digit of an integer
  *
  *Return: Always 0 (Success)
  */
