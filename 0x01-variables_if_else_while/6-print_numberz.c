@@ -19,7 +19,7 @@ int main(void)
 		putchar((i % 10) + '0');
 	}
 
-	printf("\n");
+	scanf("\n");
 
 	return (0);
 }
