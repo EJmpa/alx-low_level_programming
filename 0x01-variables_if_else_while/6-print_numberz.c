@@ -9,17 +9,14 @@
 
 int main(void)
 {
-	int i;
+	int num;
 
-	i = 0;
-
-	for (; i < 10; i++)
+	for (num = '0'; num <= '9'; num++)
 	{
-		putchar((i / 10) + '0');
-		putchar((i % 10) + '0');
+		putchar(num);
 	}
 
-	scanf("\n");
+	putchar('\n');
 
 	return (0);
 }
