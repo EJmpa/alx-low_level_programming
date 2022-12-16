@@ -5,7 +5,7 @@
  * @a: First Integer
  * @b: Second Integer
  *
- * Return output of the 'mul' function
+ * Return: output of the 'mul' function
  */
 
 int mul(int a, int b)
