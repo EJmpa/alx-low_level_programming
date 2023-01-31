@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * listint_len - Entry Point
+ * listint_len - Returns the number of elements in listint_t
  * @h: head
  * Return: 0
  */
