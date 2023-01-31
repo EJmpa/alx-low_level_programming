@@ -1,25 +1,21 @@
 #include "lists.h"
 /**
- * sum_listint - this function adds the values stores in the list
- * @head: the head of list
- * Description: this function adds the values)?
- * section header: the header of this function is lists.h)*
- * Return: return the final result of the sum
+ * sum_listint - Returns the sum of all the data (n) of a listint_t linked list
+ * @head: head
+ * Return: 0
  */
 int sum_listint(listint_t *head)
 {
-	listint_t *actual;
-	int result;
-
-	result = 0;
+	int total = 0;
 
 	if (head == NULL)
 		return (0);
-	actual = head;
-	while (actual != '\0')
+
+	while (head != NULL)
 	{
-		result = result + actual->n;
-		actual = actual->next;
+		total += head->n;
+		head = head->next;
 	}
-	return (result);
+
+	return (total);
 }
