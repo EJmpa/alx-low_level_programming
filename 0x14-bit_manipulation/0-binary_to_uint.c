@@ -1,6 +1,6 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * binary_to_uint - Convert Binary tounsigned int
+ * binary_to_uint - Convert Binary to unsigned int
  * @b: const char
  * Return: 0
  */
