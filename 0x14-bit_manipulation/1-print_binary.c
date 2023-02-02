@@ -1,33 +1,30 @@
 #include "main.h"
 /**
- * print_binary - Prints the binary representation of a number
- * @n: dec input
- * Return: 0
+ * print_binary - decimal to binary without use / %
+ * @n: the decimal
+ * Description: convert decimal to binary
+ * section header: the header of this function is holberton.h
+ * Return: no return
  */
 void print_binary(unsigned long int n)
 {
-	int i = 0, count, k, temp;
+	int flag = 0;
+	unsigned long int mask = 1;
 
+	mask <<= 63;
 	if (n == 0)
-	{
-		printf("0");
-		return;
-	}
+		_putchar('0');
 
-	temp = n;
-
-	while (temp != 0)
+	while (mask > 0)
 	{
-		i++;
-		temp = temp >> 1;
-	}
+		if ((n & mask) == 0 && flag == 1)
+			_putchar('0');
+		if ((n & mask) != 0)
+		{
+			_putchar('1');
+			flag = 1;
+		}
 
-	for (count = i - 1; count >= 0; count--)
-	{
-		k = n >> count;
-		if (k & 1)
-			printf("1");
-		else
-			printf("0");
+		mask = mask >> 1;
 	}
 }
