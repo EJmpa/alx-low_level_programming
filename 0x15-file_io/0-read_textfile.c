@@ -1,7 +1,7 @@
 #include "mainn.h"
 
 /**
- * read_textfile - Reads a text file and prints it to the POSIX standard output.
+ * read_textfile - Reads a text file & prints it to POSIX std output
  * @filename: file name
  * @letters: size
  * Return: 0
