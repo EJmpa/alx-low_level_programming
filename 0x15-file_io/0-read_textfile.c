@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 
 /**
  * read_textfile - Reads a text file & prints it to POSIX std output
