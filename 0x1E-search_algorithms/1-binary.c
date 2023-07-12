@@ -14,12 +14,12 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-    int i, mid;
-    int left = 0;
-    int right = size - 1;
+	int i, mid;
+	int left = 0;
+	int right = size - 1;
 
-    if (array == NULL)
-      return (-1);
+	if (array == NULL)
+		return (-1);
 
 
 	while (left <= right)
