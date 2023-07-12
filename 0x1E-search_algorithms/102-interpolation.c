@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "search_algos.h"
 
 /**
@@ -19,21 +20,7 @@ int interpolation_search(int *array, size_t size, int value)
 
 	while (low <= high && value >= array[low] && value <= array[high])
 	{
-<<<<<<< HEAD
-		if (low == high)
-		{
-			if (array[low] == value)
-				return (low);
-			return (-1);
-		}
-
-		pos = low + (((double)(high - low) / (array[high] - array[low]))
-			     * (value - array[low]));
-
-=======
-		pos = low + (((double)(high - low) / (array[high] - array[low]))
-			* (value - array[low]));
->>>>>>> 9ccedb254df408df3c42d81a4e83a0ef44b5e658
+		pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
 		printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
 
 		if (array[pos] == value)
